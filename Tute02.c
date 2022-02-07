@@ -19,6 +19,20 @@ Amount = 30 x 50 + (50-30) x 40 = 2300*/
 #include <stdio.h>
 
 int main() {
+  float dest, amount; //variables
+	
+	//prompt
+	printf("Input the distance travalled (Km)-:");
+	scanf("%f", &dest);
+	
+	//selection
+	if( dest <= 30)
+		amount = dest * 50;
+	else
+		amount = 1500 + (dest - 30) * 40;
+	
+	//print
+	printf("rental for the vehicle is Rs.%.2f", amount);
   
   return 0;
 }
